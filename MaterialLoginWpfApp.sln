@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialLoginWpfApp", "MaterialLoginWpfApp.csproj", "{10798F24-A174-4F99-AA8E-13F2B4EE5A04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10798F24-A174-4F99-AA8E-13F2B4EE5A04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10798F24-A174-4F99-AA8E-13F2B4EE5A04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10798F24-A174-4F99-AA8E-13F2B4EE5A04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10798F24-A174-4F99-AA8E-13F2B4EE5A04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B22EABAD-4C74-4858-8403-10B09E858BD3}
+	EndGlobalSection
+EndGlobal

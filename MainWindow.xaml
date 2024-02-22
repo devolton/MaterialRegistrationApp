@@ -1,0 +1,106 @@
+﻿<Window x:Class="MaterialLoginWpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MaterialLoginWpfApp"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="760"
+        Width="450"
+        Background="{x:Null}"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        Left="500"
+        Top="70"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}">
+    <materialDesign:Card 
+        UniformCornerRadius="15"
+        Background="{DynamicResource MaterialDesignPaper}"  
+        Margin="25"
+        materialDesign:ShadowAssist.ShadowDepth="Depth4"
+        Loaded="Card_Loaded">
+
+        <materialDesign:DialogHost
+            CloseOnClickAway="True">
+            <StackPanel >
+                <materialDesign:PopupBox
+                    HorizontalAlignment="Right"
+                    Margin="0 20 20 0"
+                    StaysOpen="False"
+                    Height="25">
+                    <StackPanel
+                       Orientation="Vertical">
+                        <Button x:Name="ExitButton"
+                         Content="Exit"
+                         Click="ExitButton_Click">
+                        </Button>
+                    </StackPanel>
+                </materialDesign:PopupBox>
+                <Image
+                    Source="Resources/logo.png"
+                    Height="140"
+                    />
+                <TextBlock 
+                    Margin="0 10 0 0"
+                    HorizontalAlignment="Center"
+                    FontSize="28px"
+                    FontWeight="Bold"
+                    Text="Welcome back!"/>
+                <TextBox
+                    Margin="0 50 0 0"
+                    Width="300"
+                    FontSize="18"
+                    x:Name="LoginTextBox"
+                    materialDesign:HintAssist.Hint="Login"
+                    Loaded="LoginTextBox_Loaded"
+                    TextChanged="LoginTextBox_TextChanged"
+                    BorderBrush="{DynamicResource MaterialDesignDivider}"
+                    Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                <PasswordBox
+                    Margin="0 30 0 0"
+                    Width="300"
+                    FontSize="18"
+                    HorizontalAlignment="Center"
+                    x:Name="PasswordTextBox"
+                    materialDesign:HintAssist.Hint="Password"
+                    Tag="password"
+                    VerticalContentAlignment="Center"
+                    PasswordChanged="PasswordTextBox_PasswordChanged"
+                    BorderBrush="{DynamicResource MaterialDesignDivider}"
+                    Style="{StaticResource MaterialDesignOutlinedRevealPasswordBox}"/>
+                <TextBox
+                    Margin="0 30 0 0"
+                    Width="300"
+                    FontSize="18"
+                    x:Name="EmailTextBox"
+                    materialDesign:HintAssist.Hint="Email"
+                    TextChanged="EmailTextBox_TextChanged"
+                    BorderBrush="{DynamicResource MaterialDesignDivider}"
+                    Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                <TextBox
+                    Margin="0 30 0 0"
+                    Width="300"
+                    FontSize="18"
+                    x:Name="PhoneNumberTextBox"
+                    materialDesign:HintAssist.Hint="PhoneNumber"
+                    TextChanged="PhoneNumberTextBox_TextChanged"
+                    BorderBrush="{DynamicResource MaterialDesignDivider}"
+                    Style="{StaticResource MaterialDesignOutlinedTextBox}"/>
+                <Button
+                    Margin="0 30 0 0 "
+                    Width="300"
+                    Height="55"
+                    x:Name="LoginButton"
+                    Style="{StaticResource MaterialDesignFlatMidBgButton}"
+                    materialDesign:ButtonAssist.CornerRadius="15"
+                    materialDesign:ShadowAssist.ShadowDepth="Depth1"
+                    Content="Login"
+                    FontSize="26"
+                    Click="LoginButton_Click"
+                    />
+            </StackPanel>
+        </materialDesign:DialogHost>
+    </materialDesign:Card>
+</Window>
